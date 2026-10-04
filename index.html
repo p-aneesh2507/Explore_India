@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">▲</span>
+            <span>
+                <strong>Explore <b>India</b></strong>
+                <small>Discover • Travel • Experience</small>
+            </span>
+        </a>
+
+        <button class="menu-button" id="menuButton">☰</button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="active">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#states">States</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <button class="search-button" id="topSearch">⌕</button>
+            <a href="index.html#trip-planner" class="trip-button">✈ Plan Your Trip</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+                <p class="welcome">Welcome to</p>
+                <h1>Explore <span>India</span></h1>
+
+                <p class="hero-text">
+                    One country. Thousands of experiences.<br>
+                    From majestic mountains to serene beaches, from ancient heritage<br class="desktop">
+                    to vibrant culture — discover the incredible India.
+                </p>
+
+                <form class="search-box" id="searchForm">
+                    <span class="search-symbol">⌕</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search destinations, cities, states..."
+                    >
+
+                    <select id="stateFilter">
+                        <option value="All">All States</option>
+                    </select>
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section experience-section">
+            <div class="heading center">
+                <p class="small-title">EXPLORE INDIA BY EXPERIENCE</p>
+                <h2>Find Your Perfect Journey</h2>
+            </div>
+
+            <div class="experience-list" id="experienceList"></div>
+        </section>
+
+        <!-- Destinations -->
+        <section class="section destination-section" id="destinations">
+            <div class="heading-row">
+                <div class="heading">
+                    <p class="small-title">TOP PICKS</p>
+                    <h2>Popular Destinations</h2>
+                    <p>Discover some of the most loved places in India</p>
+                </div>
+
+                <a href="#destinations" class="outline-button">View All Destinations →</a>
+            </div>
+
+            <div class="destination-list" id="destinationList"></div>
+
+            <div class="no-results" id="noResults">
+                <h3>No destinations found</h3>
+                <p>Try a different search or category.</p>
+            </div>
+        </section>
+        <section class="trip-planner" id="trip-planner">
+
+    <div class="trip-planner-heading">
+        <p class="small-title">PLAN YOUR JOURNEY</p>
+        <h2>Plan Your Trip</h2>
+        <p>
+            Choose your preferences and get a simple travel plan.
+        </p>
+    </div>
+
+<div class="trip-form">
+
+    <div class="trip-field">
+
+        <label for="tripDestination">
+            Destination
+        </label>
+
+        <select id="tripDestination">
+            <option value="">Select a destination</option>
+            <option value="Taj Mahal">Taj Mahal</option>
+            <option value="Kerala Backwaters">
+                Kerala Backwaters
+            </option>
+            <option value="Hawa Mahal">Hawa Mahal</option>
+            <option value="Leh Ladakh">Leh Ladakh</option>
+            <option value="Golden Temple">Golden Temple</option>
+            <option value="Goa Beaches">Goa Beaches</option>
+        </select>
+
+    </div>
+
+
+    <div class="trip-field">
+
+        <label for="tripDays">
+            Number of Days
+        </label>
+
+        <select id="tripDays">
+            <option value="">Select days</option>
+            <option value="2">2 Days</option>
+            <option value="3">3 Days</option>
+            <option value="5">5 Days</option>
+            <option value="7">7 Days</option>
+        </select>
+
+    </div>
+
+
+    <div class="trip-field">
+
+        <label for="travelStyle">
+            Travel Style
+        </label>
+
+        <select id="travelStyle">
+            <option value="">Select style</option>
+            <option value="Relaxed">Relaxed</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Culture">Culture</option>
+            <option value="Nature">Nature</option>
+        </select>
+
+    </div>
+
+
+    <div class="trip-buttons">
+
+    <button id="planTripButton">
+        Create My Plan
+    </button>
+
+    <button id="resetTripButton" type="button">
+        Reset Plan
+    </button>
+
+</div>
+
+</div>
+
+
+    <div class="trip-result" id="tripResult">
+
+        <!-- Trip plan will appear here -->
+
+    </div>
+
+</section>
+
+        <!-- States -->
+        <section class="states-section" id="states">
+            <div class="section">
+                <div class="heading-row">
+                    <div class="heading">
+                        <p class="small-title">EXPLORE BY STATE</p>
+                        <h2>Every State Has a Story</h2>
+                        <p>Explore destinations from different parts of India.</p>
+                    </div>
+
+                    <a href="#states" class="outline-button">View All States →</a>
+                </div>
+
+                <div class="state-list" id="stateList"></div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+            <div class="about-image"></div>
+
+            <div class="about-content">
+                <p class="small-title">WHY EXPLORE INDIA?</p>
+                <h2>More Than Just a Destination</h2>
+                <p class="about-intro">
+                    It’s a feeling, a culture, a journey of a lifetime.
+                </p>
+
+                <div class="features">
+                    <div>
+                        <span>◈</span>
+                        <h3>Rich Heritage</h3>
+                        <p>Centuries of history and culture</p>
+                    </div>
+
+                    <div>
+                        <span>◒</span>
+                        <h3>Stunning Nature</h3>
+                        <p>From mountains to backwaters</p>
+                    </div>
+
+                    <div>
+                        <span>✦</span>
+                        <h3>Diverse Culture</h3>
+                        <p>Traditions, languages and cuisines</p>
+                    </div>
+
+                    <div>
+                        <span>★</span>
+                        <h3>Endless Adventure</h3>
+                        <p>Trek, explore, relax and more</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">▲</span>
+                <span>
+                    <strong>Explore <b>India</b></strong>
+                    <small>Discover • Travel • Experience</small>
+                </span>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">▶</a>
+                <a href="#">𝕏</a>
+            </div>
+        </div>
+
+        <p class="copyright">© 2026 Explore India. All rights reserved.</p>
+    </footer>
+
+    <button class="back-top" id="backTop">↑</button>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

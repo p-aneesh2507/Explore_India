@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destinations | Explore India</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-mark">▲</span>
+
+        <span>
+            <strong>Explore <b>India</b></strong>
+            <small>Discover • Travel • Experience</small>
+        </span>
+
+    </a>
+
+
+    <button class="menu-button" id="menuButton">
+        ☰
+    </button>
+
+
+    <nav class="nav-menu" id="navMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="destinations.html" class="active">
+            Destinations
+        </a>
+
+        <a href="index.html#states">
+            States
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <a href="index.html#destinations" class="trip-button">
+            ✈ Plan Your Trip
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- Page heading -->
+
+    <section class="destination-header">
+
+        <p class="small-title">
+            DISCOVER INDIA
+        </p>
+
+        <h1>
+            Explore Destinations
+        </h1>
+
+        <p>
+            Find beautiful places, rich heritage, peaceful escapes
+            and unforgettable experiences across India.
+        </p>
+
+    </section>
+
+
+
+    <!-- Search and filters -->
+
+    <section class="destination-filters">
+
+        <div class="filter-search">
+
+            <input
+                type="text"
+                id="destinationSearch"
+                placeholder="Search destinations..."
+            >
+
+            <button id="searchDestinationButton">
+                Search
+            </button>
+
+        </div>
+
+
+        <div class="filter-options">
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Heritage">
+                    Heritage
+                </option>
+
+                <option value="Nature">
+                    Nature
+                </option>
+
+                <option value="Adventure">
+                    Adventure
+                </option>
+
+                <option value="Spiritual">
+                    Spiritual
+                </option>
+
+                <option value="Beach">
+                    Beach
+                </option>
+
+            </select>
+
+
+            <select id="stateFilter">
+
+                <option value="all">
+                    All States
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Destination cards -->
+
+    <section class="destination-list-section">
+
+
+        <div class="heading">
+
+            <div>
+
+                <p class="small-title">
+                    POPULAR PLACES
+                </p>
+
+                <h2>
+                    Places You Can Explore
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="destination-grid"
+            id="destinationGrid"
+        >
+
+            <!-- Destination cards will be added by JavaScript -->
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div>
+
+        <h3>
+            Explore India
+        </h3>
+
+        <p>
+            Discover • Travel • Experience
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            Explore the beauty, culture and heritage of India.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/data.js"></script>
+<script src="js/destinations.js"></script>
+
+</body>
+
+</html>
