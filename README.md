@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Explore India - Frontend FSD Project
 
 This is a simple frontend project made with:
@@ -20,3 +21,6 @@ Open `index.html` in Chrome or Edge.
 - `js/main.js` - search, filters, menu and other interactions
 
 The code is intentionally kept straightforward so that each part can be understood and explained during a project presentation or viva.
+=======
+# Explore_India
+>>>>>>> 2556ca004b924acf17939b25bf20ac024f7e9cef
